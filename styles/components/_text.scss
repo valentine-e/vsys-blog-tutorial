@@ -1,0 +1,33 @@
+.main-title,
+.secondary-title {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  &--mb20 {
+    margin-bottom: 20px;
+  }
+}
+
+.accent-text--blue {
+  color: var(--active-link-color);
+}
+
+.accent-text--darkblueBold {
+  font-family: var(--primary-font);
+  color: #1160fb;
+  font-weight: 700;
+}
+
+.accent-text--darkblue {
+  font-family: var(--primary-font);
+  color: #1160fb;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 40px;
+  }
+}

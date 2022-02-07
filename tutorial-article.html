@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body id="blog-tutorial" class="tutorial-wrapper">
+    <aside data-menu class="side-menu">
+      <ul>
+        <li>
+          <input
+            checked
+            class="side-menu__checkbox visually-hidden"
+            type="radio"
+            name="menu-item"
+            id="menu-item-1"
+          />
+          <label for="menu-item-1">Basics</label>
+          <ul class="side-submenu">
+            <li><a href="#">What is Grav? </a></li>
+            <li><a href="#">Requirements </a></li>
+            <li><a href="#">Installation </a></li>
+            <li><a href="#">Basic Tutorial </a></li>
+            <li><a href="#">Configuration </a></li>
+            <li><a href="#">Folder Structure </a></li>
+            <li><a href="#">Getting Help </a></li>
+            <li><a href="#">Updating Grav & Plugins</a></li>
+          </ul>
+        </li>
+        <li>
+          <input
+            class="side-menu__checkbox visually-hidden"
+            type="radio"
+            name="menu-item"
+            id="menu-item-2"
+          />
+          <label for="menu-item-2">Content</label>
+          <ul class="side-submenu">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="container-tutorial">
+        <ul class="breadcrumbs">
+          <li>
+            <a class="breadcrumbs__link" href="">TUTORIAL</a>
+          </li>
+          <li>
+            <a class="breadcrumbs__link breadcrumbs__link--active" href=""
+              >&nbsp;INSTALLATION</a
+            >
+          </li>
+        </ul>
+      </div>
+      <section class="tutorial-hero">
+        <div class="container-tutorial">
+          <h1 class="main-title">INSTALLATION</h1>
+          <div class="article__stat">
+            <p class="article__date">
+              Posted on
+              <time datetime="2021-11-13">13 October 2021</time>
+            </p>
+            <div class="article__rating">
+              <span>4.2</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-tutorial">
+          <h2 class="installation__title installation__title--mb8">
+            CHECK FOR PHP VERSION
+          </h2>
+          <p class="installation__text installation__text--grey">
+            Grav is incredibly easy to set up and get running. Be sure you have
+            at least PHP version 7.3.6+ by going to the terminal and typing
+            <span class="accent-text--blue">php -v</span>
+          </p>
+        </div>
+        <div class="code-instruction">
+          <div class="container-tutorial">
+            <pre class="code-instruction__text">
+php -v
+PHP 7.3.18 (cli) (built: Jun 5 2020 11:06:30) ( NTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.18, Copyright (c) 1998-2018 Zend Technologies 
+  with Zend OPcache v7.3.18, Copyright (c) 1999-2018, by Zend Technologies
+          </pre
+            >
+          </div>
+        </div>
+        <div class="container-tutorial">
+          <h2 class="installation__title">
+            Option 1: Install from ZIP package
+          </h2>
+          <p class="installation__text">
+            The easiest way to install Grav is to download the <br />
+            ZIP package and extract it:
+          </p>
+          <ul class="istallation__list">
+            <li class="installation__text installation__text--list">
+              Download the latest-and-greatest
+              <a href="#" class="accent-text--darkblueBold">Grav</a> or
+              <a href="#" class="accent-text--darkblueBold">Grav + Admin</a>
+              package.
+            </li>
+            <li class="installation__text installation__text--list">
+              Extract the ZIP file in the
+              <span class="accent-text--blue">webroot</span> of your web server,
+              e.g.
+              <span class="accent-text--blue">~/webroot/grav</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tip tip--green">
+          <div class="container-tutorial">
+            <p class="tip__text">
+              There are
+              <a href="#" class="accent-text--blue">Skeleton</a>-packages
+              available, which include the core Grav system, sample pages,
+              plugins, and configuration. They are a great way to get started;
+              all you have to do is
+              <a href="#" class="accent-text--blue">download the Skeleton</a
+              >-package you prefer, and follow the steps above.
+            </p>
+          </div>
+        </div>
+        <div class="container-tutorial">
+          <p class="installation__text">
+            You can also download any pre-packaged installation of a
+            <a href="#" class="accent-text--blue">tagged release</a> from
+            getgrav.org.Use the format
+            <span class="accent-text--blue"
+              >https://getgrav.org/download/TYPE/ PACKAGE/VERSION</span
+            >.
+          </p>
+          <h2 class="installation__title">Installation & Setup Problems</h2>
+          <p class="installation__text">
+            If any issues are discovered during the initial page load (or after
+            a cache-flush event) you may see an error page:
+          </p>
+        </div>
+        <div class="container-tutorial container-tutorial--p0-mob">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/grav-setup-mob.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/grav-setup-desk.jpg"
+            />
+            <img
+              class="grav-setup-img"
+              src="./images/grav-setup-mob.jpg"
+              alt="Setup Tips"
+            />
+          </picture>
+        </div>
+        <div class="container-tutorial">
+          <p class="installation__text">
+            Please consult the
+            <a href="#" class="accent-text--darkblue">Troubleshooting</a>
+            section for help regarding specific issues.
+          </p>
+        </div>
+        <div class="tip tip--blue">
+          <div class="container-tutorial">
+            <p class="tip__text">
+              If you have issues with file permissions, please check the
+              <a href="#" class="accent-text--darkblue"
+                >Permissions Troubleshooting documentation</a
+              >. Also, you could look at the
+              <a href="#" class="accent-text--darkblue"
+                >Hosting Guides documentation</a
+              >
+              that has specific instructions for various hosting environments
+            </p>
+          </div>
+        </div>
+        <div class="container-tutorial">
+          <ul class="social-networks">
+            <li class="social-networks__item social-networks__item--mr">
+              <a href="#"
+                ><img src="./images/facebook-gray-icon.svg" alt="Facebook logo"
+              /></a>
+            </li>
+            <li class="social-networks__item social-networks__item--mr">
+              <a href="#"
+                ><img
+                  src="./images/instagram-gray-icon.svg"
+                  alt="Instagram logo"
+              /></a>
+            </li>
+            <li class="social-networks__item social-networks__item--mr">
+              <a href="#"
+                ><img
+                  src="./images/messenger-gray-icon.svg"
+                  alt="Messenger logo"
+              /></a>
+            </li>
+            <li class="social-networks__item social-networks__item--mr">
+              <a href="#"
+                ><img src="./images/twitter-gray-icon.svg" alt="Twitter logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <button data-menu-button type="button" class="menu-button desk-d-none">
+        <img class="menu-button__open" src="./images/burger-icon.svg" alt="" />
+        <img class="menu-button__close" src="./images/cross-icon.svg" alt="" />
+      </button>
+
+      <div data-backdrop class="backdrop is-hidden"></div>
+    </main>
+    <script src="./menu.js"></script>
+  </body>
+</html>

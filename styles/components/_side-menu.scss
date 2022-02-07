@@ -1,0 +1,30 @@
+.side-menu {
+  width: 234px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--decor-gray);
+  padding: 24px 0 0 75px;
+  background-color: var(--white-color);
+}
+
+.side-submenu {
+  display: none;
+}
+
+.side-menu__checkbox:checked ~ .side-submenu {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .side-menu {
+    z-index: 10;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+}

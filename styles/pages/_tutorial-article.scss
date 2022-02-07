@@ -1,0 +1,131 @@
+.installation__title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 24px 0 16px;
+}
+
+.installation__title--mb8 {
+  margin-bottom: 8px;
+}
+
+.installation__text {
+  font-family: var(--primary-font);
+  line-height: 1.3125;
+}
+
+.installation__text--grey {
+  color: #808080;
+  font-weight: 500;
+}
+
+.code-instruction {
+  width: 320px;
+  background-color: var(--decor-bg-gray);
+  padding: 23px 0 30px;
+  color: #747474;
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 16px auto 24px;
+
+  & .container-tutorial {
+    display: flex;
+
+    &::before {
+      content: "$";
+      display: block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.code-instruction__text {
+  padding-left: 24px;
+  white-space: pre-wrap;
+  border-left: 2px solid var(--decor-gray);
+}
+
+.istallation__list {
+  padding-left: 18px;
+  margin: 16px 0;
+}
+
+.installation__text--list {
+  list-style: disc;
+  display: list-item;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.tip {
+  background-color: rgba(77, 176, 88, 0.1);
+  width: fit-content;
+  margin: 16px auto 16px;
+}
+
+.tip--green {
+  padding: 12px 0 10px;
+  color: var(--green-text-color);
+
+  & .tip__text {
+    border-left: 6px solid var(--green-text-color);
+  }
+}
+
+.tip--blue {
+  padding: 10px 0 10px;
+  color: var(--active-link-color);
+
+  & .tip__text {
+    border-left: 6px solid var(--active-link-color);
+  }
+}
+
+.tip__text {
+  padding: 10px 0 10px 10px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.grav-setup-img {
+  margin: 24px auto 16px;
+  width: 320px;
+}
+
+.social-networks__item--mr:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .container-tutorial--p0-mob {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .code-instruction {
+    width: auto;
+    margin: 24px 107px 48px 49px;
+    padding: 23px 0;
+
+    & .container-tutorial {
+      padding: 0 0 0 10px;
+    }
+  }
+
+  .tip {
+    margin: 24px 107px 24px 49px;
+    padding: 0;
+
+    & .container-tutorial {
+      padding: 0;
+    }
+  }
+
+  .grav-setup-img {
+    width: auto;
+    margin: 40px 0 24px;
+  }
+}

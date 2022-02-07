@@ -1,0 +1,28 @@
+.container,
+.container-tutorial {
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media screen and (max-width: 767px) {
+  .container--nopadding {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1240px;
+    width: auto;
+    box-sizing: content-box;
+  }
+
+  .container-tutorial {
+    margin: initial;
+    max-width: 975px;
+    width: auto;
+    padding: 0 107px 0 49px;
+    box-sizing: content-box;
+  }
+}

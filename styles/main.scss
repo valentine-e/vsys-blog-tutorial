@@ -1,0 +1,24 @@
+@import "./styles";
+@import "./base/variables";
+
+#blog-tutorial {
+  @import "./base/reset";
+  @import "./components/text";
+  @import "./components/components";
+  @import "./components/containers";
+  @import "./components/side-menu";
+
+  @import "./pages/blog-home";
+  @import "./pages/blog-article";
+  @import "./pages/blog-author";
+  @import "./pages/tutorial-home";
+  @import "./pages/tutorial-article";
+
+  font-family: var(--primary-font) !important;
+  margin: 0;
+  &.tutorial-wrapper {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+  }
+}

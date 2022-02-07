@@ -1,0 +1,90 @@
+.tutorial-hero {
+  margin-bottom: 24px;
+}
+
+.tutorial-hero__card {
+  color: var(--light-pink-color);
+  height: 254px;
+  padding: 50px 65px 0 24px;
+  background-image: url(../../images/tutorial-hero-bg-mob.jpg);
+}
+
+.tutorial-hero__title {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.tutorial-hero__text {
+  color: var(--white-color);
+}
+
+.app-platform__title {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  color: var(--secondary-text-color);
+  margin-bottom: 32px;
+}
+
+.app-platform__posts {
+  margin-bottom: 24px;
+
+  .post {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--decor-gray);
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .post__link:hover > .post__title {
+    color: var(--title-link-hover);
+  }
+
+  .post__title {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--secondary-text-color);
+    margin-bottom: 12px;
+  }
+
+  .post__text {
+    font-size: 14px;
+    color: var(--primary-text-color);
+  }
+}
+
+.tutorial-show__btn {
+  font-size: 16px;
+  font-family: var(--tertiary-font);
+  line-height: 1.28;
+  color: #2b92e4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .tutorial-hero__card {
+    height: 254px;
+    padding: 50px 0 0 65px;
+    background-image: url(../../images/tutorial-hero-bg-desk.jpg);
+  }
+
+  .tutorial-hero__title {
+    font-size: 32px;
+  }
+
+  .tutorial-hero__text {
+    font-size: 24px;
+  }
+
+  .app-platform__title {
+    font-size: 32px;
+  }
+}

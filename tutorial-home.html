@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans:wght@400;500&family=Rajdhani:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body id="blog-tutorial" class="tutorial-wrapper">
+    <aside data-menu class="side-menu">
+      <ul>
+        <li>
+          <input
+            checked
+            class="side-menu__checkbox visually-hidden"
+            type="radio"
+            name="menu-item"
+            id="menu-item-1"
+          />
+          <label for="menu-item-1">Basics</label>
+          <ul class="side-submenu">
+            <li><a href="#">What is Grav? </a></li>
+            <li><a href="#">Requirements </a></li>
+            <li><a href="#">Installation </a></li>
+            <li><a href="#">Basic Tutorial </a></li>
+            <li><a href="#">Configuration </a></li>
+            <li><a href="#">Folder Structure </a></li>
+            <li><a href="#">Getting Help </a></li>
+            <li><a href="#">Updating Grav & Plugins</a></li>
+          </ul>
+        </li>
+        <li>
+          <input
+            class="side-menu__checkbox visually-hidden"
+            type="radio"
+            name="menu-item"
+            id="menu-item-2"
+          />
+          <label for="menu-item-2">Content</label>
+          <ul class="side-submenu">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="container-tutorial">
+        <ul class="breadcrumbs">
+          <li>
+            <a class="breadcrumbs__link" href="">TUTORIAL</a>
+          </li>
+          <li>
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="">
+              &nbsp;INSTALLATION</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <section class="tutorial-hero">
+        <div class="container-tutorial">
+          <h1 class="main-title">TUTORIAL HOME</h1>
+          <div class="article__stat">
+            <p class="article__date">
+              Posted on
+              <time datetime="2021-11-13">13 October 2021</time>
+            </p>
+            <div class="article__rating">
+              <span>4.2</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+              <span>*</span>
+            </div>
+          </div>
+          <div class="tutorial-hero__card">
+            <h4 class="tutorial-hero__title">Tutorials</h4>
+            <p class="tutorial-hero__text">
+              Build a Python app using Flask and then deploy
+              <br class="mob-d-none" />
+              the app to App Platform using a Gunicorn HTTP
+              <br class="mob-d-none" />
+              server.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-tutorial">
+          <h2 class="app-platform__title">App platform</h2>
+          <ul class="app-platform__posts">
+            <li class="post">
+              <a href="#" class="post__link">
+                <h3 class="post__title">Deploy a Django App on App Platform</h3>
+                <p class="post__text">
+                  Build a Python app using Flask and then deploy the app to App
+                  Platform using a Gunicorn HTTP server.
+                </p>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post__link">
+                <h3 class="post__title">
+                  Deploy a Flask App Using Gunicorn to App Platform
+                </h3>
+                <p class="post__text">
+                  Build a Python app using Flask and then deploy the app to App
+                  Platform using a Gunicorn HTTP server.
+                </p>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post__link">
+                <h3 class="post__title">
+                  Deploy the Etherpad Collaborative Web Editor to App Platform
+                </h3>
+                <p class="post__text">
+                  Learn how to deploy the official Etherpad Docker image to
+                  DigitalOcean’s App Platform and connect it to a managed
+                  PostgreSQL database.
+                </p>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post__link">
+                <h3 class="post__title">
+                  How To Deploy a Next.js App to App Platform
+                </h3>
+                <p class="post__text">
+                  Build a Next.js app and then deploy the app to App Platform as
+                  a static server and a custom server.
+                </p>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post__link">
+                <h3 class="post__title">
+                  Deploy a Sample RSS Reader to App Platform
+                </h3>
+                <p class="post__text">
+                  Deploy a Sample RSS Reader to App Platform
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+          <div class="mob-d-none">
+            <h2 class="app-platform__title">Container Registry</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Enable Push-to-Deploy on DigitalOcean Kubernetes Using
+                    GitHub Actions
+                  </h3>
+                  <p class="post__text">
+                    Enable Push-to-Deploy on DigitalOcean Kubernetes Using
+                    GitHub Actions
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">DNS</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Retrieve DNS Information Using Dig
+                  </h3>
+                  <p class="post__text">
+                    Retrieve DNS information from the command line and validate
+                    record changes for hostnames without having to account for
+                    propagation times.
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Point to DigitalOcean Nameservers From Common Domain
+                    Registrars
+                  </h3>
+                  <p class="post__text">
+                    Instructions on how to set up DNS records with various
+                    registrars.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">doctl</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Work with DigitalOcean Load Balancers Using Doctl
+                  </h3>
+                  <p class="post__text">
+                    Use the official command-line client for DigitalOcean’s API
+                    to create and configure a load balancer for multiple backend
+                    web servers
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Droplets</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">Set up a Production-Ready Droplet</h3>
+                  <p class="post__text">
+                    Create a new Droplet with our recommended configuration for
+                    improved security, reliability, and monitoring.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Kubernetes</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Replace Unhealthy DOKS Cluster Nodes Automatically
+                  </h3>
+                  <p class="post__text">
+                    Replace Unhealthy DOKS Cluster Nodes Automatically
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Create GitOps Stack Using DigitalOcean Kubernetes and Flux
+                    CD
+                  </h3>
+                  <p class="post__text">
+                    Create GitOps Stack Using DigitalOcean Kubernetes and Flux
+                    CD
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Create Internal Load Balancer to Access Kubernetes Services
+                  </h3>
+                  <p class="post__text">Create an internal load balancer</p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Autoscale Cluster With Horizontal Pod Autoscaling
+                  </h3>
+                  <p class="post__text">
+                    Autoscale Cluster With Horizontal Pod Autoscaling
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Enable Push-to-Deploy on DigitalOcean Kubernetes Using
+                    GitHub Actions
+                  </h3>
+                  <p class="post__text">
+                    Enable Push-to-Deploy on DigitalOcean Kubernetes Using
+                    GitHub Actions
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Load Balancers</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Work with DigitalOcean Load Balancers Using Doctl
+                  </h3>
+                  <p class="post__text">
+                    Use the official command-line client for DigitalOcean’s API
+                    to create and configure a load balancer for multiple backend
+                    web servers
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Networking</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Work with DigitalOcean Load Balancers Using Doctl
+                  </h3>
+                  <p class="post__text">
+                    Use the official command-line client for DigitalOcean’s API
+                    to create and configure a load balancer for multiple backend
+                    web servers
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Point to DigitalOcean Nameservers From Common Domain
+                    Registrars
+                  </h3>
+                  <p class="post__text">
+                    Instructions on how to set up DNS records with various
+                    registrars.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Spaces</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Transfer DigitalOcean Spaces Between Regions Using Rclone
+                  </h3>
+                  <p class="post__text">
+                    Migrate data between Spaces regions, by using Rclone to
+                    transfer data between two Spaces
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+
+            <h2 class="app-platform__title">Terraform</h2>
+            <ul class="app-platform__posts">
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Create GitOps Stack Using DigitalOcean Kubernetes and Flux
+                    CD
+                  </h3>
+                  <p class="post__text">
+                    Create GitOps Stack Using DigitalOcean Kubernetes and Flux
+                    CD
+                  </p>
+                </a>
+              </li>
+              <li class="post">
+                <a href="#" class="post__link">
+                  <h3 class="post__title">
+                    Deploy A Sample Web Application Using Terraform
+                  </h3>
+                  <p class="post__text">
+                    Deploy three Droplets, a database, and a load balancer into
+                    a VPC network using Terraform and this interactive tutorial.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="tutorial-show__btn">SHOW ALL</button>
+          </div>
+        </div>
+      </section>
+      <button data-menu-button type="button" class="menu-button desk-d-none">
+        <img class="menu-button__open" src="./images/burger-icon.svg" alt="" />
+        <img class="menu-button__close" src="./images/cross-icon.svg" alt="" />
+      </button>
+
+      <div data-backdrop class="backdrop is-hidden"></div>
+    </main>
+    <script src="./menu.js"></script>
+  </body>
+</html>
