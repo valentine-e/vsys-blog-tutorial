@@ -23,7 +23,7 @@
   color: var(--active-link-color);
   background-color: var(--tag-color-bacground);
   &::after {
-    background-image: url(/images/side-menu-active-arrow.svg);
+    background-image: url(../images/side-menu-active-arrow.svg);
   }
 }
 
@@ -86,7 +86,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url(/images/side-menu-arrow.svg);
+    background-image: url(../images/side-menu-arrow.svg);
     background-size: contain;
     display: block;
     width: 9px;

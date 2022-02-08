@@ -78,7 +78,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/images/author-icon.svg);
+    background-image: url(../images/author-icon.svg);
     height: 16px;
     width: 16px;
     top: 50%;
@@ -127,7 +127,7 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url(/images/clock-icon.svg);
+    background-image: url(../images/clock-icon.svg);
     width: 15px;
     line-height: 18px;
     height: 15px;
@@ -183,12 +183,12 @@
 }
 
 .slider-button--left {
-  background-image: url(/images/slider-left-icon.svg);
+  background-image: url(../images/slider-left-icon.svg);
   left: -8px;
 }
 
 .slider-button--right {
-  background-image: url(/images/slider-right-icon.svg);
+  background-image: url(../images/slider-right-icon.svg);
   right: -8px;
 }
 

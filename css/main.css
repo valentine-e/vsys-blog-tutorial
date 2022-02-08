@@ -5525,7 +5525,7 @@ div.three-column-grid > div > label {
 }
 
 #blog-tutorial .side-menu__checkbox:checked ~ .side-menu__item::after {
-  background-image: url(/images/side-menu-active-arrow.svg);
+  background-image: url(../images/side-menu-active-arrow.svg);
 }
 
 #blog-tutorial .backdrop {
@@ -5588,7 +5588,7 @@ div.three-column-grid > div > label {
 #blog-tutorial .side-menu__item::after {
   position: absolute;
   content: "";
-  background-image: url(/images/side-menu-arrow.svg);
+  background-image: url(../images/side-menu-arrow.svg);
   background-size: contain;
   display: block;
   width: 9px;
@@ -5779,7 +5779,7 @@ div.three-column-grid > div > label {
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/images/author-icon.svg);
+  background-image: url(../images/author-icon.svg);
   height: 16px;
   width: 16px;
   top: 50%;
@@ -5827,7 +5827,7 @@ div.three-column-grid > div > label {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(/images/clock-icon.svg);
+  background-image: url(../images/clock-icon.svg);
   width: 15px;
   line-height: 18px;
   height: 15px;
@@ -5882,12 +5882,12 @@ div.three-column-grid > div > label {
 }
 
 #blog-tutorial .slider-button--left {
-  background-image: url(/images/slider-left-icon.svg);
+  background-image: url(../images/slider-left-icon.svg);
   left: -8px;
 }
 
 #blog-tutorial .slider-button--right {
-  background-image: url(/images/slider-right-icon.svg);
+  background-image: url(../images/slider-right-icon.svg);
   right: -8px;
 }
 
@@ -6097,7 +6097,7 @@ div.three-column-grid > div > label {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url(/images/author-info-icon.svg);
+  background-image: url(../images/author-info-icon.svg);
 }
 
 #blog-tutorial .article__title {
@@ -6300,7 +6300,7 @@ div.three-column-grid > div > label {
   color: var(--light-pink-color);
   height: 254px;
   padding: 50px 65px 0 24px;
-  background-image: url(../../images/tutorial-hero-bg-mob.jpg);
+  background-image: url(../images/tutorial-hero-bg-mob.jpg);
 }
 
 #blog-tutorial .tutorial-hero__title {
@@ -6371,7 +6371,7 @@ div.three-column-grid > div > label {
   #blog-tutorial .tutorial-hero__card {
     height: 254px;
     padding: 50px 0 0 65px;
-    background-image: url(../../images/tutorial-hero-bg-desk.jpg);
+    background-image: url(../images/tutorial-hero-bg-desk.jpg);
   }
   #blog-tutorial .tutorial-hero__title {
     font-size: 32px;
