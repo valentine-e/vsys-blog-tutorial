@@ -5480,7 +5480,7 @@ div.three-column-grid > div > label {
 }
 
 @media screen and (max-width: 767px) {
-  #blog-tutorial .container--nopadding {
+  #blog-tutorial .slider-container {
     padding: 0;
   }
 }
@@ -5702,6 +5702,10 @@ div.three-column-grid > div > label {
   margin-bottom: 24px;
 }
 
+#blog-tutorial .slider-container {
+  position: relative;
+}
+
 #blog-tutorial .article-card {
   flex-shrink: 0;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
@@ -5869,6 +5873,7 @@ div.three-column-grid > div > label {
 }
 
 #blog-tutorial .slider-button {
+  z-index: 5;
   border: none;
   content: "";
   cursor: pointer;
@@ -5932,6 +5937,14 @@ div.three-column-grid > div > label {
   #blog-tutorial .article-card--slider {
     margin-left: 16px;
   }
+  #blog-tutorial .slider-button--left {
+    background-image: url(../images/slider-left-icon.svg);
+    left: -23px;
+  }
+  #blog-tutorial .slider-button--right {
+    background-image: url(../images/slider-right-icon.svg);
+    right: -23px;
+  }
   #blog-tutorial .main-title--margin {
     margin-bottom: 24px;
   }
@@ -5947,6 +5960,17 @@ div.three-column-grid > div > label {
   }
   #blog-tutorial .tags-box.is-open {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #blog-tutorial .slider-button--left {
+    background-image: url(../images/slider-left-icon.svg);
+    left: 4px;
+  }
+  #blog-tutorial .slider-button--right {
+    background-image: url(../images/slider-right-icon.svg);
+    right: 4px;
   }
 }
 
