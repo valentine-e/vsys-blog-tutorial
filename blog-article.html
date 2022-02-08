@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Blog-article</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,7 @@
 
   <body id="blog-tutorial">
     <main>
-      <div class="container">
+      <div class="container blog-article__container">
         <ul class="breadcrumbs">
           <li><a class="breadcrumbs__link" href="">TUTORIAL</a></li>
           <li>
@@ -32,9 +32,9 @@
       </div>
 
       <section class="hero-section">
-        <div class="container">
+        <div class="container blog-article__container">
           <div class="main-title__wrapper">
-            <h1 class="main-title">donatello</h1>
+            <h1 class="main-title main-title--mb0">donatello</h1>
             <p class="article__tag">Hosting</p>
           </div>
           <div class="article__stat">
@@ -42,20 +42,29 @@
               Posted on
               <time datetime="2021-11-13">13 October 2021</time>
             </p>
-            <div class="article__rating article__rating--mb-blog">
-              <span>4.2</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
+            <div class="rating">
+              <a href="#5" title="Give 5 stars">★</a>
+              <a href="#4" title="Give 4 stars">★</a>
+              <a href="#3" title="Give 3 stars">★</a>
+              <a href="#2" title="Give 2 stars">★</a>
+              <a href="#1" title="Give 1 stars">★</a>
+              <span class="rating__number">4.2</span>
             </div>
           </div>
 
-          <img
-            src="./images/article-illustration-mob.jpg"
-            alt="Article illustration"
-          />
+          <picture
+            ><source
+              media="(max-width: 767px)"
+              srcset="./images/article-illustration-mob.jpg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/article-illustration-desk.jpg" />
+            <img
+              class="article-illustration"
+              src="./images/article-illustration-mob.jpg"
+              alt="Article illustration"
+          /></picture>
+
           <a class="article-author__box">
             <img
               class="article-author__photo"
@@ -124,13 +133,20 @@
             years, sometimes by accident, sometimes on purpose (injected humour
             and the like).
           </p>
-          <img
-            class="article__illustration"
-            src="/images/article-illustration-2-mob.jpg"
-            alt="Article illustration"
-          />
+          <picture
+            ><source
+              media="(max-width: 767px)"
+              srcset="./images/article-illustration-2-mob.jpg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/article-illustration-2-desk.jpg" />
+            <img
+              class="article__illustration"
+              src="./images/article-illustration-2-mob.jpg"
+              alt="Article illustration"
+          /></picture>
           <h3 class="article__title">Check for PHP version</h3>
-          <p class="article__text">
+          <p class="article__text article__text--margin">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -169,12 +185,12 @@
       </section>
 
       <section>
-        <div class="container">
+        <div class="container blog-article__container">
           <h2 class="secondary-title secondary-title--mb20">
             What else to read on the topic
           </h2>
 
-          <ul>
+          <ul class="card-list">
             <li class="article-card article-card--mb">
               <a class="article-card__thumb article-card__thumb--mb" href=""
                 ><img
@@ -238,6 +254,7 @@
           </ul>
         </div>
       </section>
+      <script src="./back-to-top.js"></script>
     </main>
   </body>
 </html>

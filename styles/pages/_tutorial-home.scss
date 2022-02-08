@@ -50,6 +50,7 @@
     line-height: 1.25;
     color: var(--secondary-text-color);
     margin-bottom: 12px;
+    transition: color var(--timing-function);
   }
 
   .post__text {
@@ -70,6 +71,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .tutorial-hero {
+    margin-bottom: 51px;
+  }
+
   .tutorial-hero__card {
     height: 254px;
     padding: 50px 0 0 65px;

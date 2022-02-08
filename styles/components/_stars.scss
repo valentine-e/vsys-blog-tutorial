@@ -1,0 +1,38 @@
+.rating__number {
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.rating {
+  align-items: center;
+  display: flex;
+  width: fit-content;
+  flex-direction: row-reverse;
+
+  overflow: hidden;
+}
+
+.rating a {
+  vertical-align: auto;
+  color: var(--star-bcg);
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.rating:hover a {
+  color: var(--star-hover);
+}
+
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a {
+  color: var(--star-focus);
+  cursor: pointer;
+}

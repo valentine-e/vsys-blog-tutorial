@@ -1,3 +1,11 @@
+.article-illustration {
+  width: 100%;
+}
+
+.blog-article__container {
+  max-width: 933px;
+}
+
 .main-title__wrapper {
   position: relative;
 }
@@ -38,9 +46,11 @@
   line-height: 1.25;
   text-transform: uppercase;
   margin-top: 23px;
+  transition: color var(--timing-function);
 }
 
 .article-author__tag {
+  font-size: 12px;
   width: fit-content;
   padding: 3px 7px;
   color: var(--active-link-color);
@@ -109,5 +119,72 @@
   .social-networks img {
     width: 24px;
     height: 24px;
+  }
+
+  .article__tag {
+    position: static;
+  }
+
+  .main-title__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .main-title--mb0 {
+    margin: 0;
+  }
+
+  .article-author__box {
+    padding: 32px 0 32px;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+  }
+
+  .article-author__photo {
+    margin-right: 24px;
+  }
+
+  .article-author__name {
+    font-size: 18px;
+  }
+
+  .article__text {
+    margin-bottom: 16px;
+  }
+
+  .article__text--margin {
+    margin-bottom: 24px;
+  }
+
+  .article__title {
+    margin-bottom: 8px;
+  }
+
+  .social-networks {
+    margin-bottom: 48px;
+  }
+
+  .card-list {
+    display: flex;
+    margin: -12px;
+
+    .article-card {
+      flex-basis: calc((100% - 3 * 24px) / 3);
+      margin: 12px;
+    }
+
+    .article-card__image {
+      width: 100%;
+    }
+
+    .article-card__author {
+      margin: 0 0 16px 12px;
+    }
+
+    .article-card__title {
+      font-size: 16px;
+    }
   }
 }

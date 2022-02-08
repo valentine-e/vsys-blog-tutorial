@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Blog-author</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,137 +19,148 @@
   </head>
 
   <body id="blog-tutorial">
-    <main>
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li><a class="breadcrumbs__link" href="">TUTORIAL</a></li>
-          <li><a class="breadcrumbs__link" href="">&nbsp;DONATELLO</a></li>
-          <li>
-            <a class="breadcrumbs__link" href="">&nbsp;READ OUR BLOG</a>
-          </li>
-          <li>
-            <a class="breadcrumbs__link breadcrumbs__link--active" href=""
-              >&nbsp;Yehor korenchuk</a
-            >
-          </li>
-        </ul>
+    <main class="main-content">
+      <div class="author-aside mob-d-none">
+        <img
+          class="author-photo"
+          src="./images/author-photo-desk.png"
+          alt="Author photo"
+        />
+        <p class="article-author__info mob-d-none">4 articles</p>
       </div>
-
-      <section>
-        <div class="container">
-          <a class="article-author__box article-author__box--margin">
-            <img
-              class="article-author__photo"
-              src="/images/author-pic.png"
-              alt="Author photo"
-            />
-            <div class="article-author__thumb">
-              <h3 class="article-author__name">Yehor korenchuk</h3>
-              <p class="article-author__tag">Founder</p>
-              <p class="article-author__info">4 articles</p>
-            </div>
-          </a>
-          <h4 class="article-author__position">Founder</h4>
-          <p class="article-author__text">
-            The point of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text.Many desktop publishing packages and web page editors now
-            use Lorem Ipsum as their default model text.Many desktop publishing
-            packages and web page editors now use Lorem Ipsum.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <h2 class="secondary-title secondary-title--mb50">Articles</h2>
-
-          <ul>
-            <li class="article-card article-card--mb">
-              <a class="article-card__thumb article-card__thumb--mb" href=""
-                ><img
-                  class="article-card__image"
-                  src="./images/article-image-mob.jpg"
-                  alt="Article illustration"
-              /></a>
-
-              <a class="article-card__author article-card__author--ml" href=""
-                >Yehor Korinchuk</a
-              >
-              <a class="article-card__box article-card__box--padding" href="">
-                <h3 class="article-card__title article-card__title--mb">
-                  Management VPS is quite similar
-                </h3>
-                <time class="article-card__date" datetime="1991-04-12"
-                  >12.04.1991</time
-                >
-              </a>
+      <div class="author-info">
+        <div class="container container--p0">
+          <ul class="breadcrumbs">
+            <li><a class="breadcrumbs__link" href="">TUTORIAL</a></li>
+            <li><a class="breadcrumbs__link" href="">&nbsp;DONATELLO</a></li>
+            <li>
+              <a class="breadcrumbs__link" href="">&nbsp;READ OUR BLOG</a>
             </li>
-            <li class="article-card article-card--mb">
-              <a class="article-card__thumb article-card__thumb--mb" href=""
-                ><img
-                  class="article-card__image"
-                  src="./images/article-image-mob.jpg"
-                  alt="Article illustration"
-              /></a>
-
-              <a class="article-card__author article-card__author--ml" href=""
-                >Yehor Korinchuk</a
+            <li>
+              <a class="breadcrumbs__link breadcrumbs__link--active" href=""
+                >&nbsp;Yehor korenchuk</a
               >
-              <a class="article-card__box article-card__box--padding" href="">
-                <h3 class="article-card__title article-card__title--mb">
-                  Management VPS is quite similar
-                </h3>
-                <time class="article-card__date" datetime="1991-04-12"
-                  >12.04.1991</time
-                >
-              </a>
-            </li>
-            <li class="article-card article-card--mb">
-              <a class="article-card__thumb article-card__thumb--mb" href=""
-                ><img
-                  class="article-card__image"
-                  src="./images/article-image-mob.jpg"
-                  alt="Article illustration"
-              /></a>
-
-              <a class="article-card__author article-card__author--ml" href=""
-                >Yehor Korinchuk</a
-              >
-              <a class="article-card__box article-card__box--padding" href="">
-                <h3 class="article-card__title article-card__title--mb">
-                  Management VPS is quite similar
-                </h3>
-                <time class="article-card__date" datetime="1991-04-12"
-                  >12.04.1991</time
-                >
-              </a>
-            </li>
-            <li class="article-card article-card--mb">
-              <a class="article-card__thumb article-card__thumb--mb" href=""
-                ><img
-                  class="article-card__image"
-                  src="./images/article-image-mob.jpg"
-                  alt="Article illustration"
-              /></a>
-
-              <a class="article-card__author article-card__author--ml" href=""
-                >Yehor Korinchuk</a
-              >
-              <a class="article-card__box article-card__box--padding" href="">
-                <h3 class="article-card__title article-card__title--mb">
-                  Management VPS is quite similar
-                </h3>
-                <time class="article-card__date" datetime="1991-04-12"
-                  >12.04.1991</time
-                >
-              </a>
             </li>
           </ul>
         </div>
-      </section>
+
+        <section>
+          <div class="container container--p0">
+            <a class="article-author__box article-author__box--margin">
+              <img
+                class="article-author__photo desk-d-none"
+                src="/images/author-pic.png"
+                alt="Author photo"
+              />
+              <div class="article-author__thumb">
+                <h1 class="article-author__title">Yehor korenchuk</h1>
+                <p class="article-author__tag desk-d-none">Founder</p>
+                <p class="article-author__info desk-d-none">4 articles</p>
+              </div>
+            </a>
+            <h4 class="article-author__position">Founder</h4>
+            <p class="article-author__text">
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text.Many desktop publishing packages and web
+              page editors now use Lorem Ipsum as their default model text.Many
+              desktop publishing packages and web page editors now use Lorem
+              Ipsum.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="container container--p0">
+            <h2 class="secondary-title secondary-title--mb50">Articles</h2>
+
+            <ul class="author-articles">
+              <li class="article-card article-card--mb">
+                <a class="article-card__thumb article-card__thumb--mb" href=""
+                  ><img
+                    class="article-card__image"
+                    src="./images/article-image-mob.jpg"
+                    alt="Article illustration"
+                /></a>
+
+                <a class="article-card__author article-card__author--ml" href=""
+                  >Yehor Korinchuk</a
+                >
+                <a class="article-card__box article-card__box--padding" href="">
+                  <h3 class="article-card__title article-card__title--mb">
+                    Management VPS is quite similar
+                  </h3>
+                  <time class="article-card__date" datetime="1991-04-12"
+                    >12.04.1991</time
+                  >
+                </a>
+              </li>
+              <li class="article-card article-card--mb">
+                <a class="article-card__thumb article-card__thumb--mb" href=""
+                  ><img
+                    class="article-card__image"
+                    src="./images/article-image-mob.jpg"
+                    alt="Article illustration"
+                /></a>
+
+                <a class="article-card__author article-card__author--ml" href=""
+                  >Yehor Korinchuk</a
+                >
+                <a class="article-card__box article-card__box--padding" href="">
+                  <h3 class="article-card__title article-card__title--mb">
+                    Management VPS is quite similar
+                  </h3>
+                  <time class="article-card__date" datetime="1991-04-12"
+                    >12.04.1991</time
+                  >
+                </a>
+              </li>
+              <li class="article-card article-card--mb">
+                <a class="article-card__thumb article-card__thumb--mb" href=""
+                  ><img
+                    class="article-card__image"
+                    src="./images/article-image-mob.jpg"
+                    alt="Article illustration"
+                /></a>
+
+                <a class="article-card__author article-card__author--ml" href=""
+                  >Yehor Korinchuk</a
+                >
+                <a class="article-card__box article-card__box--padding" href="">
+                  <h3 class="article-card__title article-card__title--mb">
+                    Management VPS is quite similar
+                  </h3>
+                  <time class="article-card__date" datetime="1991-04-12"
+                    >12.04.1991</time
+                  >
+                </a>
+              </li>
+              <li class="article-card article-card--mb">
+                <a class="article-card__thumb article-card__thumb--mb" href=""
+                  ><img
+                    class="article-card__image"
+                    src="./images/article-image-mob.jpg"
+                    alt="Article illustration"
+                /></a>
+
+                <a class="article-card__author article-card__author--ml" href=""
+                  >Yehor Korinchuk</a
+                >
+                <a class="article-card__box article-card__box--padding" href="">
+                  <h3 class="article-card__title article-card__title--mb">
+                    Management VPS is quite similar
+                  </h3>
+                  <time class="article-card__date" datetime="1991-04-12"
+                    >12.04.1991</time
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

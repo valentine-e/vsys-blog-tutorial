@@ -4,6 +4,13 @@
   border: none;
 }
 
+.article-author__title {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
+}
+
 .article-author__position {
   font-weight: 500;
   font-size: 16px;
@@ -19,4 +26,86 @@
 
 .secondary-title--mb50 {
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    box-sizing: content-box;
+    padding: 0 16px;
+    max-width: 1240px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .container--p0 {
+    padding: 0;
+  }
+
+  .author-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 120px;
+  }
+
+  .author-photo {
+    width: 320px;
+  }
+
+  .author-info {
+    padding-left: 102px;
+  }
+
+  .article-author__info {
+    margin: 24px 0 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    padding-left: 34px;
+
+    &::before {
+      background-size: contain;
+
+      object-fit: contain;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .article-author__title {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .article-author__box--margin {
+    margin: 0 0 2px 0;
+  }
+  .author-articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -13px;
+
+    .article-card {
+      flex-basis: calc((100% - 2 * 26px) / 2);
+      margin: 13px;
+    }
+
+    .article-card__image {
+      width: 100%;
+    }
+
+    .article-card__author {
+      margin: 0 0 22px 22px;
+    }
+
+    .article-card__box {
+      padding: 0 22px 24px;
+    }
+
+    .article-card__title {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
 }

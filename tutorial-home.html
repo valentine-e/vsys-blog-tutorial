@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tutorial-home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,43 +14,359 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body id="blog-tutorial" class="tutorial-wrapper">
-    <aside data-menu class="side-menu">
-      <ul>
-        <li>
+    <aside data-menu class="side-menu side-menu__box">
+      <div class="side-menu__thumb">
+        <div class="side-menu__searchbox">
           <input
-            checked
-            class="side-menu__checkbox visually-hidden"
-            type="radio"
-            name="menu-item"
-            id="menu-item-1"
+            class="side-menu__search"
+            type="text"
+            placeholder="Search..."
           />
-          <label for="menu-item-1">Basics</label>
-          <ul class="side-submenu">
-            <li><a href="#">What is Grav? </a></li>
-            <li><a href="#">Requirements </a></li>
-            <li><a href="#">Installation </a></li>
-            <li><a href="#">Basic Tutorial </a></li>
-            <li><a href="#">Configuration </a></li>
-            <li><a href="#">Folder Structure </a></li>
-            <li><a href="#">Getting Help </a></li>
-            <li><a href="#">Updating Grav & Plugins</a></li>
-          </ul>
-        </li>
-        <li>
-          <input
-            class="side-menu__checkbox visually-hidden"
-            type="radio"
-            name="menu-item"
-            id="menu-item-2"
-          />
-          <label for="menu-item-2">Content</label>
-          <ul class="side-submenu">
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+        <ul data-menu-list>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-1"
+            />
+
+            <label class="side-menu__item" for="menu-item-1">Basics</label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">What is Grav? </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Requirements </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Installation </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Basic Tutorial </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Configuration </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Folder Structure </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Getting Help </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Updating Grav & Plugins</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-2"
+            />
+
+            <label class="side-menu__item" for="menu-item-2">Content</label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-3"
+            />
+
+            <label class="side-menu__item" for="menu-item-3">Themes</label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-4"
+            />
+
+            <label class="side-menu__item" for="menu-item-4">Plugins</label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-5"
+            />
+
+            <label class="side-menu__item" for="menu-item-5"
+              >Administration Panel</label
+            >
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-6"
+            />
+
+            <label class="side-menu__item" for="menu-item-6">Forms</label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-7"
+            />
+
+            <label class="side-menu__item" for="menu-item-7"
+              >CLI Console
+            </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-8"
+            />
+
+            <label class="side-menu__item" for="menu-item-8">Advanced </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-9"
+            />
+
+            <label class="side-menu__item" for="menu-item-9"
+              >Web Servers & Hosting
+            </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-10"
+            />
+
+            <label class="side-menu__item" for="menu-item-10">Cookbook </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-11"
+            />
+
+            <label class="side-menu__item" for="menu-item-11"
+              >Troubleshooting
+            </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-12"
+            />
+
+            <label class="side-menu__item" for="menu-item-12">Migration </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-13"
+            />
+
+            <label class="side-menu__item" for="menu-item-13">Security </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-14"
+            />
+
+            <label class="side-menu__item" for="menu-item-14">Grav API </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="side-menu__checkbox visually-hidden"
+              type="radio"
+              name="menu-item"
+              id="menu-item-15"
+            />
+
+            <label class="side-menu__item" for="menu-item-15"
+              >Hints and Tips
+            </label>
+            <ul class="side-menu__sublist">
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-1</a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-2 </a>
+              </li>
+              <li class="side-menu__subitem">
+                <a class="side-menu__link" href="#">Item-3 </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </aside>
     <main>
       <div class="container-tutorial">
@@ -74,13 +390,13 @@
               Posted on
               <time datetime="2021-11-13">13 October 2021</time>
             </p>
-            <div class="article__rating">
-              <span>4.2</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
-              <span>*</span>
+            <div class="rating">
+              <a href="#5" title="Give 5 stars">★</a>
+              <a href="#4" title="Give 4 stars">★</a>
+              <a href="#3" title="Give 3 stars">★</a>
+              <a href="#2" title="Give 2 stars">★</a>
+              <a href="#1" title="Give 1 stars">★</a>
+              <span class="rating__number">4.2</span>
             </div>
           </div>
           <div class="tutorial-hero__card">

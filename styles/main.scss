@@ -7,6 +7,7 @@
   @import "./components/components";
   @import "./components/containers";
   @import "./components/side-menu";
+  @import "./components/stars";
 
   @import "./pages/blog-home";
   @import "./pages/blog-article";
@@ -16,9 +17,16 @@
 
   font-family: var(--primary-font) !important;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
   &.tutorial-wrapper {
     display: flex;
     flex-shrink: 1;
     justify-content: center;
   }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
