@@ -6,7 +6,9 @@ const refs = {
 };
 
 refs.menuBtn.addEventListener("click", menuToggle);
-refs.menuList.addEventListener("click", onMenuListClick);
+if (refs.menuList) {
+  refs.menuList.addEventListener("click", onMenuListClick);
+}
 
 function menuToggle() {
   refs.menu.classList.toggle("is-open");
