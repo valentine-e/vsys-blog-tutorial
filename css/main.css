@@ -5446,7 +5446,7 @@ div.three-column-grid > div > label {
 
 @media screen and (max-width: 767px) {
   #blog-tutorial .mob-d-none {
-    display: none;
+    display: none !important;
   }
   #blog-tutorial .article__stat {
     margin-bottom: 44px;
@@ -5455,7 +5455,7 @@ div.three-column-grid > div > label {
 
 @media screen and (min-width: 768px) {
   #blog-tutorial .desk-d-none {
-    display: none;
+    display: none !important;
   }
   #blog-tutorial .breadcrumbs {
     padding: 48px 0 56px;
@@ -6054,10 +6054,14 @@ div.three-column-grid > div > label {
   position: relative;
 }
 
+#blog-tutorial .article__tag--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 #blog-tutorial .article__tag {
-  position: absolute;
-  top: 33px;
-  right: 0;
   width: fit-content;
   font-weight: 500;
   font-size: 16px;

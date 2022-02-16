@@ -10,10 +10,14 @@
   position: relative;
 }
 
+.article__tag--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .article__tag {
-  position: absolute;
-  top: 33px;
-  right: 0;
   width: fit-content;
   font-weight: 500;
   font-size: 16px;
